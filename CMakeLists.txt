@@ -13,6 +13,7 @@ set (URDF_MAJOR_MINOR_VERSION ${URDF_MAJOR_VERSION}.${URDF_MINOR_VERSION})
 set(urdfdom_headers_DIR "/home/ubuntu/workspace/chaquopy/server/pypi/packages/urdfdom/build/3.1.1/cp39-cp39-android_28_arm64_v8a/requirements/cmeel.prefix/lib/urdfdom_headers/cmake")
 set(console_bridge_DIR "/home/ubuntu/workspace/chaquopy/server/pypi/packages/urdfdom/build/3.1.1/cp39-cp39-android_28_arm64_v8a/requirements/cmeel.prefix/lib/console_bridge/cmake")
 set(TinyXML_ROOT_DIR "/home/ubuntu/workspace/pkg/tinyxml")
+set(CONSOLE_BRIDGE_LIB "/home/ubuntu/workspace/chaquopy/server/pypi/packages/urdfdom/build/3.1.1/cp39-cp39-android_28_arm64_v8a/requirements/cmeel.prefix/lib/libconsole_bridge.so")
 
 message (STATUS "${PROJECT_NAME} version ${URDF_VERSION}")
 
