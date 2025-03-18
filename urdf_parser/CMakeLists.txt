@@ -15,8 +15,7 @@ macro(add_urdfdom_library)
     ${add_urdfdom_library_LINK}
     ${console_bridge_link_libs}
     ${urdfdom_headers_link_libs}
-    ${TinyXML_LIBRARIES}
-    ${CONSOLE_BRIDGE_LIB})
+    ${TinyXML_LIBRARIES})
   if(NOT CMAKE_CXX_STANDARD)
     target_compile_features(${add_urdfdom_library_LIBNAME} PUBLIC cxx_std_14)
   endif()

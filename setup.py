@@ -57,8 +57,8 @@ class CMakeBuildExt(build_ext):
         shutil.copytree(source_lib_path, lib_path)
         
         # test
-        # source_test_path = os.path.join(PROJECT_DIR, "../requirements/cmeel.prefix/lib/libconsole_bridge.so")
-        # shutil.copy(source_test_path, lib_path)
+        source_test_path = os.path.join(PROJECT_DIR, "../requirements/cmeel.prefix/lib/libconsole_bridge.so")
+        shutil.copy(source_test_path, lib_path)
         
         # bin
         bin_path = os.path.join(self.build_lib, "cmeel.prefix", "bin")
