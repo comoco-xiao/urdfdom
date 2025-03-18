@@ -3,6 +3,7 @@ macro(add_urdfdom_library)
   set(multiValueArgs SOURCES LINK)
   cmake_parse_arguments(add_urdfdom_library "${options}" "${oneValueArgs}" "${multiValueArgs}" ${ARGN})
 
+  message(--------------------------------TinyXML_INCLUDE_DIRS---1---${TinyXML_INCLUDE_DIRS})
   add_library(${add_urdfdom_library_LIBNAME} SHARED
     ${add_urdfdom_library_SOURCES})
   target_include_directories(${add_urdfdom_library_LIBNAME} SYSTEM PUBLIC
@@ -21,6 +22,9 @@ macro(add_urdfdom_library)
   set_target_properties(${add_urdfdom_library_LIBNAME} PROPERTIES
     DEFINE_SYMBOL URDFDOM_EXPORTS
     SOVERSION ${URDF_MAJOR_MINOR_VERSION})
+
+  # todo xiao
+  target_compile_definitions(${add_urdfdom_library_LIBNAME} PUBLIC TIXML_USE_STL)
 endmacro()
 
 if(TARGET console_bridge::console_bridge)
@@ -53,6 +57,8 @@ add_urdfdom_library(
     src/model.cpp
     src/link.cpp
     src/joint.cpp)
+# todo xiao
+set_target_properties(urdfdom_model PROPERTIES POSITION_INDEPENDENT_CODE ON)
 
 add_urdfdom_library(
   LIBNAME

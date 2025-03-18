@@ -31,9 +31,10 @@ foreach(GTEST_SOURCE_file ${tests})
     gtest
     urdfdom_model
   )
-  if (UNIX)
-    target_link_libraries(${BINARY_NAME} pthread)
-  endif()
+  # todo xiao
+  # if (UNIX)
+  #   target_link_libraries(${BINARY_NAME} pthread)
+  # endif()
 
   add_test(NAME    ${BINARY_NAME}
            COMMAND ${BINARY_NAME}
