@@ -10,8 +10,8 @@ set (URDF_MAJOR_MINOR_VERSION ${URDF_MAJOR_VERSION}.${URDF_MINOR_VERSION})
 
 
 # tod xiao
-set(urdfdom_headers_DIR "/home/ubuntu/workspace/pkg/urdfdom_headers/lib/urdfdom_headers/cmake")
-set(console_bridge_DIR "/home/ubuntu/workspace/pkg/console_bridge/lib/console_bridge/cmake")
+# set(urdfdom_headers_DIR "/home/ubuntu/workspace/pkg/urdfdom_headers/lib/urdfdom_headers/cmake")
+# set(console_bridge_DIR "/home/ubuntu/workspace/pkg/console_bridge/lib/console_bridge/cmake")
 set(TinyXML_ROOT_DIR "/home/ubuntu/workspace/pkg/tinyxml")
 
 message (STATUS "${PROJECT_NAME} version ${URDF_VERSION}")
